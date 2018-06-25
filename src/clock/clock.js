@@ -9,12 +9,12 @@ export class Clock{
     }
 
     incrementHours() {
-        this.hours = this.hours + 1;
+        this.hours = (this.hours + 1) % 25;
         this.render();
     }
 
     incrementMinutes() {
-        this.minutes = this.minutes + 1;
+        this.minutes = (this.minutes + 1) % 60;
         this.render();
     }
 
